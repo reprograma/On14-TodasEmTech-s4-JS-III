@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>   
+
+    /*
+
+    EXERCICIO: (UTILIZAR PARAMETRO) 
+    CALCULE A MEDIA DO ALUNO
+    
+    Questão: (UTILIZAR PARAMETRO) 
+    ETAPA 1 = Elaborar um programa que calcule a média do aluno.
+    ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
+    ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
+
+    OPÇÃO 1 SEM RETURN 
+
+
+        function calcularMediaAluno (){
+
+            var nota1 = prompt("Informe a primeira nota entre 0 e 10: ");
+            var nota2 = prompt("Informe a segunda nota entre 0 e 10:  ");
+            var nota3 = prompt("Informe a terceira nota entre 0 e 10: ");
+            var nota4 = prompt("Informe a quarta nota entre 0 e 10:  "); 
+
+            if (nota1 == "" || nota2 == "" || nota3 == "" || nota4 == "" ){
+                alert("Nota nula! Por favor, insira uma nota válida:");
+                calcularMediaAluno();
+            }
+
+            var media = (Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4)) / 4;            
+             
+            if (media < 6) {
+                alert("Aluno, infelizmente você não foi aprovado! Você teve média de " + media);                
+            }
+                else {
+                    alert("Parabéns aluno, você foi aprovado com média " + media);
+                }
+        }                 
+
+        calcularMediaAluno(); 
+
+
+        OPÇÃO 2
+
+        */
+
+        var media = calcularMedia ();                 // a variável média vai chamar a função de calcular a media
+
+        calcularResultado(media);                     // chamando a função de calcular o resultado, passando como parâmetro a var media 
+
+        function calcularMedia () {
+
+            var nota1 = prompt("Informe a primeira nota entre 0 e 10: ");
+            var nota2 = prompt("Informe a segunda nota entre 0 e 10:  ");
+            var nota3 = prompt("Informe a terceira nota entre 0 e 10: ");
+            var nota4 = prompt("Informe a quarta nota entre 0 e 10:  "); 
+            
+            if (nota1 == "" || nota2 == "" || nota3 == "" || nota4 == "" ){             // se qualquer nota que o aluno inserir for vazia, o programa é chamado novamente até que ele insira as 4 notas certas
+                alert("Aluno, você inseriu uma nota nula! Por favor, repita o processo e insira todas as nota válidas:");
+                return calcularMedia();
+            }
+
+            return (Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4)) / 4;          // vai retornar a media (soma das notas dividido por 4)        
+        }
+        
+        function calcularResultado (){
+            if (media < 6) {
+                alert("Aluno, infelizmente você não foi aprovado! Você teve média de " + media);                
+            }
+                else {
+                    alert("Parabéns aluno, você foi aprovado com média " + media);
+                }
+        }
+        
+    </script>    
+</body>
+</html>
