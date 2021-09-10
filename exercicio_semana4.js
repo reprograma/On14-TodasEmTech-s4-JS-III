@@ -1,4 +1,4 @@
-/*<!---EXERCICIO: CALCULE A MEDIA DO ALUNO - XENIA BARRETO
+/*<!---EXERCICIO: CALCULE A MEDIA DO ALUNO - XENIA BARRETO - TESTE EM NODE.JS
 
 //Questão: (UTILIZAR PARAMETRO) 
 //ETAPA 1 = Elaborar um programa que calcule a média do aluno.
