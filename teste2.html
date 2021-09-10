@@ -1,0 +1,74 @@
+<html>
+
+<script>
+
+function inserirChave(){
+var numero = Number(prompt("Insira o número correto da chave: "));
+
+function confirmarChave(chave){
+
+if(chave == 1){
+    alert("Chave esta correta")
+}else{
+    return inserirChave()
+    
+}
+}
+confirmarChave(numero)
+}
+
+inserirChave()
+
+</script>
+</html>
+
+<html>
+<script>
+    let produto1 = Number(prompt('Digite o valor do seu produto?'))
+    let produto2 = Number(prompt('Digite o valor do seu produto?'))
+    let produto3 = Number(prompt('Digite o valor do seu produto?'))
+    let produto4 = Number(prompt('Digite o valor do seu produto?'))
+    
+    function valorCestinha(prod1,prod2,prod3,prod4){
+        let valorTotal = (prod1 + prod2 + prod3 + (prod4/2))
+        return valorTotal
+    }
+    
+    let valorCompra = valorCestinha(produto1,produto2,produto3,produto4)
+    
+    alert('O valor da sua cestinha é de R$' + valorCompra + ',00')
+    </script>
+
+</html>
+    
+    // OU
+    
+    let produto1 = Number(prompt('Digite o valor do seu produto?'))
+    let produto2 = Number(prompt('Digite o valor do seu produto?'))
+    let produto3 = Number(prompt('Digite o valor do seu produto?'))
+    let produto4 = Number(prompt('Digite o valor do seu produto?'))
+    
+    function valorCestinha(prod1,prod2,prod3,prod4){
+        let valorTotal = (prod1 + prod2 + prod3 + (prod4/2))
+        alert('O valor da sua cestinha é de R$' + valorTotal + ',00')
+    
+    }
+
+    
+// EXERCICIO: (UTILIZAR PARAMETRO) 
+//CALCULE A MEDIA DO ALUNO
+
+//Questão: (UTILIZAR PARAMETRO) 
+//ETAPA 1 = Elaborar um programa que calcule a média do aluno.
+//ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
+//ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
+
+
+FRONT END:
+
+PROMPT = FRONTEND || INPUT = ENTRADA DE DADOS
+ALERT = FRONT ||
+
+BACK END:
+
+INPUT = Localizar um método no Javascript para dar INPUT pelo Node.JS
