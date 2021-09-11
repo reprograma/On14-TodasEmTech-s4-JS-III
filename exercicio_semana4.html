@@ -1,0 +1,43 @@
+<!---EXERCICIO: CALCULE A MEDIA DO ALUNO - XENIA BARRETO - TESTAR EM FRONT-END - HTML
+
+//Questão: (UTILIZAR PARAMETRO) 
+//ETAPA 1 = Elaborar um programa que calcule a média do aluno.
+//ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
+//ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+// Fiz sem parametro para o HTML
+function calcularMedia (){
+    let nota1 = Number.parseFloat(prompt ("Insira a nota da AV 1:"));
+    let nota2 = Number.parseFloat(prompt ("Insira a nota da AV 2:"));
+    let nota3 = Number.parseFloat(prompt ("Insira a nota da AV 3:"));
+    let nota4 = Number.parseFloat(prompt ("Insira a nota da AV 4:"));
+    
+    if (isNaN(nota1)||isNaN(nota2)||isNaN(nota3)||isNaN(nota4)||nota1==undefined||nota2==undefined||nota3==undefined||nota4==undefined){
+        alert ("ERRO!\nFavor inserir TODAS as notas corretamente.");
+        return calcularMedia ();
+    }
+
+    let media = ((nota1 + nota2 + nota3 + nota4)/4);
+
+    if(media >= 6){
+        alert (`Parabéns! Você foi aprovado.\nSua média é ${media}.`);
+    }else {
+        alert (`Infelizmente você foi reprovado!\nSua média é ${media}.`);
+    }
+}
+calcularMedia()
+
+    </script>
+</body>
+</html>
